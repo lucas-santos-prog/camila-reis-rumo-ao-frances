@@ -1,5 +1,5 @@
 import { MessageCircle } from "lucide-react";
-import React from "react";
+import Image from "next/image";
 import { BsInstagram } from "react-icons/bs";
 
 export default function Footer() {
@@ -8,13 +8,15 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <img
-              src={"/assets/logo.png"}
-              alt="Rumo ao Francês"
-              className="h-12 w-12 brightness-200"
-              width={32}
-              height={32}
-            />
+            <div className="h-12 w-12 relative">
+              <Image
+                src={"/assets/logo.png"}
+                alt="Rumo ao Francês"
+                className="h-12 w-12 brightness-200"
+                fill
+                sizes="48px"
+              />
+            </div>
             <span className="font-display text-lg">Rumo ao Francês</span>
           </div>
 

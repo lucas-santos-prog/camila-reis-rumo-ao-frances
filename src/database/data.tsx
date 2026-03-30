@@ -1,3 +1,14 @@
+import {
+  Plane,
+  GraduationCap,
+  Heart,
+  Globe,
+  BookOpen,
+  Users,
+  LucideProps,
+} from "lucide-react";
+import { ForwardRefExoticComponent, RefAttributes } from "react";
+
 export interface Testimonial {
   id: number;
   name: string;
@@ -162,5 +173,63 @@ export const navItems = [
   { label: "Contato", href: "#contato" },
 ];
 
+export const highlights: string[] = [
+  "Mais de 100 alunos transformados",
+  "Aulas 100% online — de qualquer lugar do Brasil",
+  "Método objetivo com foco em gramática e prática",
+  "Do zero ao intermediário em 6 meses",
+  "Preparação para DELF, DALF e DILF",
+];
+
+export type BenefitType = {
+  icon: ForwardRefExoticComponent<
+    Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
+  >;
+  title: string;
+  description: string;
+};
+
+export const benefits = [
+  {
+    icon: Plane,
+    title: "Viagens",
+    description:
+      "Comunique-se com confiança em Paris, Montreal, Bruxelas e todos os países francófonos.",
+  },
+  {
+    icon: GraduationCap,
+    title: "Certificações",
+    description:
+      "Prepare-se para as provas DELF, DALF e DILF com um método focado em resultados.",
+  },
+  {
+    icon: Globe,
+    title: "Carreira Internacional",
+    description:
+      "O francês é a 5ª língua mais falada no mundo e um diferencial competitivo no mercado de trabalho.",
+  },
+  {
+    icon: BookOpen,
+    title: "Gramática Objetiva",
+    description:
+      "Aprenda gramática de forma clara e contextualizada, sem enrolação.",
+  },
+  {
+    icon: Heart,
+    title: "Paixão pela Língua",
+    description:
+      "Descubra a beleza do francês em aulas dinâmicas que vão além do idioma.",
+  },
+  {
+    icon: Users,
+    title: "Aulas Personalizadas",
+    description:
+      "Cada aluno recebe um plano de estudos adaptado aos seus objetivos e ritmo.",
+  },
+];
+
 export const WHATSAPP_CTA =
   "https://wa.me/5511984599581?text=Olá%20Camila!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20de%20francês.";
+
+export const WHATSAPP_CTA_HERO =
+  "https://wa.me/5511984599581?text=Olá%20Camila!%20Vi%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20método%20Rumo%20ao%20Francês.";

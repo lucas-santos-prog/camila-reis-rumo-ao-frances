@@ -21,7 +21,12 @@ export default function LogoLink() {
     <div className="container mx-auto px-4 h-16 flex items-center justify-between">
       <Link href="#inicio" className="flex items-center gap-1">
         <div className="h-24 w-24 relative">
-          <Image src="/assets/logo.png" alt="Rumo ao Francês" fill />
+          <Image
+            src="/assets/logo.png"
+            alt="Rumo ao Francês"
+            fill
+            sizes="96px"
+          />
         </div>
         <span className="font-display text-xl font-semibold text-foreground">
           Rumo ao Francês

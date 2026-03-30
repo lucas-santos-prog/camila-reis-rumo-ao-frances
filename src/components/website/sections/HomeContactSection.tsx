@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { MapPin, MessageCircle } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 import { BsInstagram } from "react-icons/bs";
 
@@ -49,7 +50,7 @@ export default function HomeContactSection() {
                 </div>
               </a>
 
-              <a
+              <Link
                 href="https://www.instagram.com/rumo_ao_frances/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -66,7 +67,7 @@ export default function HomeContactSection() {
                     @rumo_ao_frances • Dicas diárias
                   </p>
                 </div>
-              </a>
+              </Link>
             </div>
 
             <div className="flex items-center gap-2 text-muted-foreground text-sm">
