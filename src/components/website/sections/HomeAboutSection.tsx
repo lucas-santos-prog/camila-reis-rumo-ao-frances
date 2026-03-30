@@ -58,11 +58,11 @@ export const HeroCTA = () => (
 
 export default function HomeAboutSection() {
   return (
-    <section id="sobre" className="py-20 bg-background">
-      <div className="default-padding container mx-auto px-4">
+    <section id="sobre" className="lg:px-24 py-20 bg-background">
+      <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-14 items-center px 4 py-12 rounded-md shadow-md">
           <HeroImagery />
-          <div>
+          <div className="px-4 lg:px-0">
             <HeroContent />
             <HeroCTA />
           </div>

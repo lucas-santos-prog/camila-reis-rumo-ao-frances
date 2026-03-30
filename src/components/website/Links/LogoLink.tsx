@@ -10,8 +10,7 @@ import { Menu, MessageCircle, X } from "lucide-react";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 
 export default function LogoLink() {
-  const { isActiveMobileMenu, setIsActiveMobileMenu } =
-    useContext(HeaderContext);
+  const { setIsActiveMobileMenu } = useContext(HeaderContext);
   const { scrollToSection } = useSmoothScroll();
 
   const handleNavClick = (href: string) => {

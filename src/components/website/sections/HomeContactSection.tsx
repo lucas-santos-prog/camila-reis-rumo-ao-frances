@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { MapPin, MessageCircle } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { BsInstagram } from "react-icons/bs";
@@ -81,8 +82,12 @@ export default function HomeContactSection() {
             <div className="absolute top-0 right-0 w-40 h-40 bg-accent/10 rounded-full blur-3xl" />
 
             <div className="relative z-10">
-              <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-5">
-                <span className="text-3xl">🇫🇷</span>
+              <div className="relative w-24 h-24 rounded-full bg-accentflex items-center justify-center mx-auto mb-5">
+                <Image
+                  src="/assets/logo.png"
+                  alt="logo - rumo ao francês"
+                  fill
+                />
               </div>
 
               <h3 className="font-display text-2xl md:text-3xl text-primary-foreground mb-3">
